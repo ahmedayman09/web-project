@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta class="utf-8">
+        <meta name="view port" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/models.css">
+        <title>SPARK Egypt-Fashion page-Best Models</title>
+
+        <style>
+
+.container {
+    margin:auto;
+    width:1170px ;
+    }
+/*Start header*/
+  /* Start Navbar*/
+
+  .header .navbar{
+    background-color :black;
+    color: white;
+    overflow: hidden;
+
+}
+.header .navbar h2{
+    float: left;
+}
+.header .navbar h2 span {
+    color: yellow;
+}
+.header .navbar ul {
+    list-style: none;
+    padding-left: 0;
+    float: right;
+}
+.header .navbar ul li {
+    float: left;
+    padding: 10px;
+}
+
+.header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.header .navbar ul li .active a{
+    color: yellow;
+  }
+  .header .navbar ul li a:hover{
+    color: yellow;
+}
+    /* End Navbar*/
+/*End header*/
+
+/* Start Slider */
+* {
+    box-sizing: border-box;
+    margin: 30;
+    padding-top: 0px;
+  }
+  .slider-container {
+    margin: 10px auto;
+    width: 800px;
+    height: 250px;
+    position: relative;
+    padding-left: 100px;
+  }
+  .slider-container img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+  }
+  .slider-container img.active {
+    opacity: 1;
+  }
+  .slider-container .slide-number {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #FFF;
+    padding: 5px 10px;
+    font-size: 20px;
+    z-index: 2;
+    border-radius: 6px;
+    margin-left: 100px;
+  }
+  .slider-controls {
+    width: 800px;
+    overflow: hidden;
+    padding-top:500px;
+    margin: auto;
+ }
+  .slider-controls .prev,
+  .slider-controls .next {
+    background-color: #009688;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    user-select: none;
+    width: 20%;
+  }
+  .slider-controls .prev {
+    float: left;
+  }
+  .slider-controls .next {
+    float: right;
+  }
+  .slider-controls .prev.disabled,
+  .slider-controls .next.disabled {
+    background-color: rgba(0, 150, 136, 0.5);
+    cursor: no-drop;
+  }
+  .slider-controls .indicators {
+    width: 60%;
+    float: left;
+    padding-bottom: 20px;
+  }
+  .slider-controls .indicators ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+  .slider-controls .indicators ul li {
+    display: inline-block;
+    background-color: #F6F6F6;
+    color: #333;
+    font-weight: bold;
+    height: 28px;
+    width: 28px;
+    border-radius: 4px;
+    margin: 0 2px;
+    line-height: 28px;
+    cursor: pointer;
+  }
+  .slider-controls .indicators ul li.active {
+    background-color: #009688;
+    color: #FFF;
+  }
+/* End Slider */
+
+  /*--Start Footer*/
+  .footer {
+    background-color :black;
+    color: white;
+    overflow: hidden;
+ }
+
+ .footer  p {
+     text-align: center;
+     color: white;
+ }
+  /*--End Footer*/
+
+</style>
+    </head>
+    <body>
+
+        <!--Start Header--> 
+            <div class="header">
+                 <div class="navbar">
+                    <div class="container">
+                        <h2>SP<span>ARK</span></h2>
+                        <ul>
+                            <li><a href="Home.html" >Home</a></li>
+                            <li><a href="about.html" >About</a></li>
+                            <li><a href="gallery.html" >Gallery</a></li>
+                            <li class="active"><a href="models.html" >Best Models</a></li>
+                            <li><a href="index.html" >Register | Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <!--End Header-->
+
+        <!--Start Slider-->
+
+        <div class="slider-container">
+            <div id="slide-number" class="slide-number">Slide #12</div>
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+            <img src="images/7.jpg" alt="">
+            <img src="images/8.jpg" alt="">
+            <img src="images/9.jpg" alt="">
+            <img src="images/10.jpg" alt="">
+            <img src="images/11.jpg" alt="">
+            <img src="images/12.jpg" alt="">
+        </div>
+        <div class="slider-controls">
+            <span id="prev" class="prev">Previous</span>
+            <span id="indicators" class="indicators"></span>
+            <span id="next" class="next">Next</span>
+          </div>
+
+        <!--End Slider-->
+
+         <!--Start Footer-->
+         <div class="footer">
+            <p>SPARK Fashion, Copyright &copy; 2020</p>
+        </div>
+        <!--End Footer-->
+
+        <script src="js/models.js"></script>
+    </body>
+</html>
